@@ -1,0 +1,52 @@
+{% extends 'base.html'%}
+
+{%load static%}
+
+{% block content %}
+
+<section class="productdetail" id="productdetail">
+
+  <div class="container mt-5">
+    <div class="row mt-5">
+      <div class="col-md-12">
+
+        <div class="card border-0">
+          <div class="row no-gutters">
+            <div class="col-md-6">
+              <!-- Product Image -->
+              <img src="{{ object.picture.url }}" alt="product image" class="card-img img-fluid justify-content-center">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body text-center">
+                <!-- Product Details -->
+                <h2 class="card-title ">Product Name: {{object.name}}</h2>
+                <p class="card-text">Description:{{object.description}}.</p>
+                <p class="card-text text-primary">Price: <span
+                    class="font-weight-bold text-dark">${{object.Price}}</span></p>
+                <p class="card-text">Model: <span class="font-italic text-primary">{{ object.model }}</span></p>
+
+                <!-- Features -->
+                <h4 class="card-text">Features:</h4>
+                <ul class="list-unstyled">
+                  <li>Fuel Efficiency: {{ object.fuel_efficiency_highway }} MPG</li>
+                  <li>{{ object.key_features }}</li>
+
+                </ul>
+                <!-- Contact Buttons -->
+                <div class="mt-4 py-3">
+                  <a href=" https://wa.me/4917658188153"><button class="btn btn-outline-success whatsapp fa-2xl mx-5"><i
+                        class="bi bi-whatsapp"></i></button></a>
+                  <a href="/"><button class="btn btn-outline-primary whatsapp fa-2xl mx-5"><i
+                        class="bi bi-messenger"></i></button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+{% endblock content %}

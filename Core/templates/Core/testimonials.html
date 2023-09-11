@@ -1,0 +1,23 @@
+<section class="testimonials" id="testimonials">
+  <h2>Testimonials from our Customers</h2>
+  <div class="container-fluid">
+    <div class="row testimonial-row">
+      {% for testimonial in testominals %}
+      <div class="col-md-4">
+        <div class="card">
+          <img class="img-fluid testimonials-image" src="{{ testimonial.picture.url }}" alt="">
+          <div class="card-body">
+            <blockquote class="card-text">
+              {{ testimonial.Testominalstext }}
+            </blockquote>
+          </div>
+          <div class="footer bg-primary text-white">
+            <span class="card-title">{{ testimonial.Firstname }} {{ testimonial.Lastname }}</span><br>
+            <span class="position">{{ testimonial.position }}</span>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

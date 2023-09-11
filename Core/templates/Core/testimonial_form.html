@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="contianer-fluid d-flex justify-content-center text-primary  align-content-center p-3 ms-auto">
+
+	<form method="POST" enctype="multipart/form-data">
+		<div class="headingtext">
+			<h2>New Testimonials Registration</h2>
+		</div>
+		{% csrf_token %}
+		{{ form|crispy}}
+		<input type="submit" value="Save" class="btn btn-success" />
+	</form>
+</div>
+{% endblock content %}

@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="product-hero mt-5 mb-2">
+    <div class="container">
+        <h2>Our Products</h2>
+        <p>Unveiling Excellence on Wheels: Discover Our Exquisite Collection of Cars."
+            "Elevate Your Driving Experience with our Premium Selection of Cars</p>
+    </div>
+</section>
+<section class="productspage " id="productspage">
+    <div class="container-fluid">
+        <div class="row product-row d-flex justify-content-center align-items-center">
+            {% for product in products %}
+            <div class="col-md-3 mb-2">
+                <div class="card">
+                    <img src="{{ product.picture.url }}" class="card-img-top" alt="{{ product.name }}">
+                    <div class="card-body pt-0 px-2">
+                        <div class="d-flex flex-row justify-content-between mb-2">
+                            <small class="text-dark mt-1">Price:</small>
+                            <h6>&dollar;{{ product.Price }}</h6>
+                        </div>
+                        <hr class="my-2">
+                        <div class="d-flex flex-row justify-content-between pb-3">
+                            <div class="d-flex flex-column">
+                                <span class="text-muted">Fuel Efficiency</span>
+                                <small class="text-muted">L/100KM&ast;</small>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <h5 class="mb-0">{{ product.fuel_efficiency_highway }}</h5>
+                                <small class="text-muted text-right">(city/Hwy)</small>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between mid">
+                            <div class="d-flex flex-column">
+                                <small class="text-muted mb-1">ENGINE</small>
+                                <div class="d-flex flex-row align-items-center">
+                                    <img src="https://imgur.com/iPtsG7I.png" width="35px" height="25px"
+                                        alt="Engine Icon">
+                                    <div class="d-flex flex-column ml-1">
+                                        <small class="ghj">1.4L MultiAir</small>
+                                        <small class="ghj">16V I-4 Turbo</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <small class="text-muted mb-2">HORSEPOWER</small>
+                                <div class="d-flex flex-row align-items-center">
+                                    <img src="https://imgur.com/J11mEBq.png" width="25px" height="25px"
+                                        alt="Horsepower Icon">
+                                    <h6 class="ml-1">135 hp&ast;</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <small class="text-muted key mt-3">Standard Key Features</small>
+                        <div class="mt-2">
+                            {% if request.user.is_authenticated %}
+                            <div class="product-actions">
+                                <a href="{% url 'product_detail' product.id %}"
+                                    class="btn btn-danger btn-block"><small>Check the
+                                        product</small></a>
+                                <div class="mt-2">
+                                    <a href="{% url 'product-edit' product.id %}"
+                                        class="text-danger text-decoration-none">Edit</a>
+                                    <a href="{% url 'product-delete' product.id %}"
+                                        class="text-danger ml-2 text-decoration-none">Delete</a>
+                                </div>
+                            </div>
+                            {% else %}
+                            <div class="product-actions">
+                                <a href="{% url 'product_detail' product.id %}"
+                                    class="btn btn-danger btn-block"><small>Check the
+                                        product</small></a>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock content %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<section class="user_registration mt-5 p-5 "> <!-- Add top margin and padding top -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="card border-primary">
+          <div class="card-header bg-primary text-white text-center">
+            <h2>Registration for New Account</h2>
+          </div>
+          <div class="card-body text-primary">
+            <form method="post">
+              {% csrf_token %}
+              {{ form|crispy }}
+              <button class="btn btn-outline-success rounded-5 border-2 w-100" type="submit">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}

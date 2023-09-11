@@ -1,0 +1,117 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+<section class="about-hero mt-5">
+  <div class="container">
+    <h2>About Us</h2>
+
+  </div>
+</section>
+
+<section class="about-history">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h3 class="text-primary text-center">Our Historical Background</h3>
+        <p class="history m-5">Jeeh General Trading is a full-service logistics and transportation
+          import and export
+          company based in Djibouti, UAE, and Turkey. Our mission is to provide high-quality, reliable, and
+          cost-effective logistics solutions to our clients across the globe. Our services include air, sea, and land
+          transportation, customs clearance, warehousing, packaging, and distribution.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, natus autem expedita tenetur quia perspiciatis
+          officiis vitae iure accusamus rem voluptatem itaque cupiditate obcaecati! At, dolorem nostrum eum, iure ad,
+          minus commodi architecto consequuntur pariatur consequatur deserunt odio quidem ea iste omnis aut fuga.
+          Deleniti cupiditate vitae illo necessitatibus dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Tempore ratione eius consectetur possimus! Laudantium deleniti voluptas mollitia quae rem facere nemo ad
+          laboriosam labore ex voluptate qui possimus dolorem, vitae esse et corporis necessitatibus quo error
+          voluptates facilis aliquid. Quidem illum modi veniam veritatis, velit adipisci culpa facilis excepturi
+          obcaecati.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <div class="about-image">
+          <img src="{% static 'images/Logo_jeeh.png'%}" alt="Image 1" style="height: 100%; width: 100%;">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="vision-mission">
+  <div class="container">
+    <div class="row m-2">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="text-primary"><i class="bi bi-eye-fill"></i></h3>
+            <h4 class="card-title text-primary">Vision</h4>
+            <hr class="text-primary">
+            <p class="card-text text-center">We plan to differentiate ourselves by providing customized logistics
+              solutions tailored to our clients' specific needs, offering competitive pricing, and focusing on customer
+              satisfaction. We will also leverage technology to improve our operations and provide real-time visibility
+              into our clients'
+              shipments.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="text-primary"> <i class="bi bi-compass-fill"></i></h3>
+            <h4 class="card-title text-primary">Mission</h4>
+            <hr class="text-primary">
+            <p class="card-text text-center">Our target market includes importers, exporters, manufacturers,
+              distributors, and
+              retailers across various industries, such as retail, automotive, foods and consumer goods. The logistics
+              and transportation industry is highly competitive, and our main competitors include established global
+              players and local providers.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="text-primary"><i class="bi bi-bullseye"></i></h3>
+            <h4 class="card-title text-primary">Goals</h4>
+            <hr class="text-primary">
+            <p class="card-text text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe numquam
+              amet sit dolore
+              modi ipsum quod. Laudantium debitis quidem rerum tempora consequuntur nihil porro earum repellat aut!
+              Tempore autem beatae necessitatibus, fugit ipsam distinctio sit corrupti deserunt repudiandae</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="team" id="team">
+  <h2 class="section-title mb-0">Our Team</h2>
+  <div class="container">
+    <p class="section-subtitle text-center">Meet our professional and dedicated team that combines both readiness and
+      efficiency</p>
+    <div class="team-grid">
+      {% for team in teams %}
+      <div class="team-member mb-0">
+        <div class="member-img align-content-center">
+          <img class="img-thumbnail " src="{{ team.picture.url }}" alt="{{ team.Firstname }} {{ team.Lastname }}" />
+          <div class="description">
+            <p class="text-black text-center">{{ team.description }}</p>
+          </div>
+        </div>
+        <div class="member-info">
+          <h4>{{ team.Firstname }} {{ team.Lastname }}</h4>
+          <h5 class="text-primary">{{ team.Position }}</h5>
+          <div class="social-icons">
+            <a href="{{team.facebook_link}}"><i class="bi bi-facebook"></i></a>
+            <a href="{{team.twitter_link}}"><i class="bi bi-twitter"></i></i></a>
+            <a href="{{team.instagram_link}}"><i class="bi bi-instagram"></i></a>
+            <a href="{{team.youtube_link}}"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock content %}

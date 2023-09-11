@@ -1,0 +1,294 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section id="hero" class="d-flex align-items-center">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+        <h1>Welcome to <span>Jeeh General Trading</span></h1>
+        <h2>Your Partner for Seamless Supply Chain Solutions.<br>Where we can fulfill your needs.</h2>
+        <div class="d-flex align-items-center hero-buttons">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="#products" class="btn-get-started scrollto">Checkout Latest Products</a>
+        </div>
+    </div>
+</section><!-- End Hero -->
+<section id="about" class="about section-bg">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>About</h2>
+            <h3>Find Out More <span>About Us</span></h3>
+            <p>Jeeh General Trading is a full-service logistics and transportation import and export company based in
+                Djibouti, UAE, and Turkey.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="{%static 'img/about1.png' %}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center">
+                <h3 class="text-primary">Why Choose us?</h3>
+                <p class=" fst-italic">
+                    We plan to differentiate ourselves by providing customized logistics solutions tailored to our
+                    clients' specific needs, offering competitive pricing, and focusing on customer satisfaction. We
+                    will also leverage technology to improve our operations and provide real-time visibility into our
+                    clients' shipments.
+                </p>
+                <ul>
+                    <li class="text-primary">
+                        <i class="bi bi-bullseye"></i>
+                        <div>
+                            <h5 class="text-primary">Mission</h5>
+                            <p class="text-dark">Our target market includes importers, exporters, manufacturers,
+                                distributors, and
+                                retailers across various industries, such as retail, automotive, foods and consumer
+                                goods. The logistics and transportation industry is highly competitive, and our main
+                                competitors include established global players and local providers.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="bi bi-eye-fill"></i>
+                        <div>
+                            <h5 class="text-primary">Vision</h5>
+                            <p class=" text-dark">Our mission is to provide high-quality, reliable, and
+                                cost-effective
+                                logistics solutions
+                                to our clients across the globe. Our services include air, sea, and land
+                                transportation,
+                                customs clearance, warehousing, packaging, and distribution
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <p>
+                    Our mission is to provide high-quality, reliable, and cost-effective logistics solutions to our
+                    clients across the globe. Our services include air, sea, and land transportation, customs
+                    clearance,
+                    warehousing, packaging, and distribution
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section><!-- End About Section -->
+<section id="services" class="services">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Services</h2>
+            <h3>Check our <span>Services</span></h3>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box">
+                    <div class="icon"><img class="img-fluid center" src="{% static 'img/car.svg' %}" alt=""
+                            style="height: 40px; width: 180px;"></div>
+                    <h4><a href="">Automative</a></h4>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+                data-aos-delay="200">
+                <div class="icon-box">
+                    <div class="icon"> <img class="img-fluid" src="{% static 'img/Shipping.svg' %}" alt=""
+                            style="height: 40px; width: 180px;"> </div>
+                    <h4><a href="">Freight</a></h4>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
+                data-aos-delay="300">
+                <div class="icon-box">
+                    <div class="icon"><img class="img-fluid" src="{% static 'img/clearance.svg' %} " alt=""
+                            style="height: 40px; width: 180px;"></div>
+                    <h4><a href="">Clearance</a></h4>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box">
+                    <div class="icon"><img class="img-fluid" src="{% static 'img/Accounting.svg' %} " alt=""
+                            style="height: 40px; width: 180px;"></div>
+                    <h4><a href="">Accounting</a></h4>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
+                    <div class="icon"> <img class="img-fluid" src="{% static 'img/import.svg' %} " alt=""
+                            style="height: 40px; width: 180px;"></div>
+                    <h4><a href="">Import and Export</a></h4>
+                    <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section><!-- End Services Section -->
+<section class="products" id="products">
+    <div class="container-fluid text-center bg-light">
+        <div class="section-title">
+            <h2>Products</h2>
+            <h3>Check our latest <span>Products</span></h3>
+        </div>
+        <div class="row mb-0">
+            {% for product in products %}
+            <div class="col-md-4 border-0 mb-1 pb-1">
+                <div class="card mb-4 border-0" style=" height: 30rem;">
+                    <div class="card-img-top">
+                        <a href="{% url 'product_detail' product.id %}" class="text-primary  text-decoration-none"> <img
+                                src="{{ product.picture.url }}" alt="Product Image" class="product-image img-fluid"
+                                style="height: 200px; width: 100%;"></a>
+                    </div>
+                    <div class="card-body">
+                        <a href="{% url 'product_detail' product.id %}" class="text-primary  text-decoration-none">
+                            <h4 class="card-title bg-primary text-white">{{ product.name }}</h4>
+                        </a>
+                        <p class="card-text">Fuel Efficiency (Highway): {{ product.fuel_efficiency_highway }} MPG</p>
+                        <div class="product-info">
+                            <span class="text-primary justify-content-end">${{ product.Price }}</span>
+                        </div>
+                        <p>
+                            {% if request.user.is_authenticated %}
+                        <div class="product-actions">
+                            <a href="{% url 'product_detail' product.id %}"
+                                class="text-primary m-5  text-decoration-none">Check
+                                the
+                                product &rarr;</a>
+                            <p>
+                                <a href="{% url 'product-edit' product.id %}"
+                                    class="text-danger m-5 text-decoration-none">Edit</a>
+                                <a href="{% url 'product-delete' product.id %}"
+                                    class="text-danger m-5  text-decoration-none">Delete</a>
+                            </p>
+                        </div>
+                        {% else %}
+                        <div class="product-actions">
+                            <a href="{% url 'product_detail' product.id %}"
+                                class="text-primary  text-decoration-none">Check the
+                                product &rarr;</a>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            </p>
+        </div>
+        <div class="mb-1">
+            <a href="{% url 'product'%}">
+                <h4 class="btn btn-primary text-white rounded-5">For more products, Click Here ...</h4>
+            </a>
+        </div>
+    </div>
+</section>
+<section id="team" class="team section-bg">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Team</h2>
+            <h3>Innovators, Creators, and Dreamers: <span>Our Team</span></h3>
+            <p>Driving Success with a Dedicated Team</p>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                    <div class="member-img">
+                        <img src="{% static 'img/team/jeeh.jpg' %}" class="img-fluid" alt="">
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4 class="text-primary">Abdirahman Mouhoumed</h4>
+                        <span>Founder & Chief Executive Officer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                <div class="member">
+                    <div class="member-img">
+                        <img src="{% static 'img/team/Mahad2.jpg' %}" class="img-fluid" alt="Mahad Profile pic">
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4 class="text-primary">Mahad Djama</h4>
+                        <span>General Manager</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                <div class="member">
+                    <div class="member-img">
+                        <img src="{% static 'img/team/mohamed.jpg' %}" class="img-fluid" alt="">
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4 class="text-primary">Mohamed Daher</h4>
+                        <span>CFO</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+                <div class="member">
+                    <div class="member-img">
+                        <img src="{% static 'img/team/khadar.jpg' %}" class="img-fluid" alt="">
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4 class="text-primary">Khadar Mohamed</h4>
+                        <span>Operational Manager</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+                <div class="member">
+                    <div class="member-img">
+                        <img src="{% static 'img/team/Waqar Khan.jpg' %}" class="img-fluid" alt="">
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4 class="text-primary">Waqqar Khan</h4>
+                        <span>Sales Representative</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section><!-- End Team Section -->
+
+{% endblock content %}
