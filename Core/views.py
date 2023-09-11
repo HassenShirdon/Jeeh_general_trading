@@ -103,13 +103,13 @@ def create_testimonials(request):
         form = TestimonialsForm()
 
     context = {'form': form}
-    return render(request, 'testimonial_form.html', context)
+    return render(request, 'Core/testimonial_form.html', context)
 
 
 def about(request):
     teams = Team.objects.all()
-    return render(request, 'about.html', {'teams': teams})
+    return render(request, 'Core/about.html', {'teams': teams})
 
 
 def services(request):
-    return render(request, 'services.html', {})
+    return render(request, 'Core/services.html', {})

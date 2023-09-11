@@ -37,33 +37,32 @@
     <header id="header" class="d-flex align-items-center">
         <div class="container d-flex align-items-center justify-content-between">
 
-            <h1 class="logo"><a href="index.html">BizLand<span>.</span></a></h1>
+            <h1 class="logo"><a href="{% url 'index' %}">BizLand<span>.</span></a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto active" href="{% url 'index' %}">Home</a></li>
                     <li><a class="nav-link scrollto" href="#about">About</a></li>
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
                     <li><a class="nav-link scrollto " href="#products">Products</a></li>
                     <li><a class="nav-link scrollto" href="#team">Team</a></li>
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                     {% if request.user.is_authenticated %}
-                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a href="#"><span>Create</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="#">Drop Down 1</a></li>
-                            <li><a href="#">Drop Down 2</a></li>
-                            <li><a href="#">Drop Down 3</a></li>
-                            <li><a href="#">Drop Down 4</a></li>
-                            <li><a href="#">Drop Down 5</a></li>
+                            <li><a href="{%url 'product-create'%}">Product</a></li>
+                            <li><a href="{%url 'team-create'%}">Team</a></li>
+                            <li><a href="{%url 'testimonial-create'%}">Testimonials</a></li>
+
                         </ul>
                     </li>
-                    <li><a class="nav-link scrollto" href="#contact">Logout</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'logout' %}">Logout</a></li>
                     {% else %}
 
                     <li><a class="nav-link scrollto" href="{% url 'login' %}">Login</a></li>
-                    <li><a class="nav-link scrollto" href="{% url 'logout' %}">Join</a></li>
+                    <li><a class="nav-link scrollto" href="{% url 'register' %}">Join</a></li>
 
                     {% endif %}
 
@@ -77,6 +76,49 @@
     {% block content %}
 
     {% endblock content %}
+    <footer class="container-fluid bg-dark text-white">
+        <div class="footer-container">
+            <div class="row">
+                <div class="social-icons footer-column col-md-4">
+                    <h3 class="text-white font-bold">Connect with Us</h3>
+                    <ul class="list-unstyled social-icons-list">
+                        <li><a href="#" class="text-white"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#" class="text-white"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="#" class="text-white"><i class="bi bi-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center footer-column">
+                    <h3 class="text-white">Important Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="{% url 'index' %}" class="text-white">Home</a></li>
+                        <li><a href="{% url 'product' %}" class="text-white">Products</a></li>
+                        <li><a href="{% url 'services' %}" class="text-white">Services</a></li>
+                        <li><a href="{% url 'about' %}" class="text-white">About us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center footer-column">
+                    <h3 class="text-white">Contact Information</h3>
+                    <ul class="list-unstyled contact-info-list">
+                        <li class="text-white">Rue de Rome</li>
+                        <li class="text-white">Phone: +253 7783 9781</li>
+                        <li class="text-white">Email: info@jeehgroup.com</li>
+                        <li class="text-white">Djibouti, Djibouti</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-row text-center">
+                <div class="footer-copy">
+                    <p>&copy; 2023 <a href="hassentahir.vercel.app"><span id="company-name">Hassen Tahir</span></a>.
+                        All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
 
     <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
     <script src="{% static 'vendor/aos/aos.js' %}"></script>
