@@ -12,64 +12,59 @@
     </div>
 </section><!-- End Hero -->
 <section id="about" class="about section-bg">
-    <div class="container-fluid" data-aos="fade-up">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
 
         <div class="section-title">
             <h2>About</h2>
             <h3>Find Out More <span>About Us</span></h3>
-            <p>Jeeh General Trading is a full-service logistics and transportation import and export company based in
-                Djibouti, UAE, and Turkey.</p>
+            <p>Welcome to Jeeh General Trading - Your Global Trading Partner</p>
         </div>
 
         <div class="row">
-            <div class="col-lg-6">
-                <img src="{%static 'img/about1.png' %}" class="img-fluid" alt="">
+            <div class="col-lg-6 aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                <img src="{% static 'img/about1.png' %}" class="img-fluid" alt="">
             </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center">
-                <h3 class="text-primary">Why Choose us?</h3>
-                <p class=" fst-italic">
-                    We plan to differentiate ourselves by providing customized logistics solutions tailored to our
-                    clients' specific needs, offering competitive pricing, and focusing on customer satisfaction. We
-                    will also leverage technology to improve our operations and provide real-time visibility into our
-                    clients' shipments.
+            <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center aos-init aos-animate"
+                data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-primary">Elevate your business with Jeeh General Trading. Discover the difference a
+                    trusted global trading
+                    partner can make.</h3>
+                <p class="fst-italic">
+                    Choose Jeeh General Trading for your automotive import and export needs. Our expertise and
+                    commitment to excellence in the automotive sector will drive your business forward.
                 </p>
                 <ul>
-                    <li class="text-primary">
+                    <li>
                         <i class="bi bi-bullseye"></i>
                         <div>
                             <h5 class="text-primary">Mission</h5>
-                            <p class="text-dark">Our target market includes importers, exporters, manufacturers,
-                                distributors, and
-                                retailers across various industries, such as retail, automotive, foods and consumer
-                                goods. The logistics and transportation industry is highly competitive, and our main
-                                competitors include established global players and local providers.</p>
+                            <p>At Jeeh General Company, we're on a mission to make global trade accessible, reliable,
+                                and enriching for businesses worldwide. We specialize in sourcing and delivering
+                                top-quality automotive and food products from the diverse markets of Dubai, Turkey,
+                                India, Pakistan, China, and Japan. With a steadfast commitment to excellence,
+                                sustainability, and
+                                unmatched service, we empower businesses to thrive in today's interconnected world</p>
                         </div>
                     </li>
                     <li>
-                        <i class="bi bi-eye-fill"></i>
+                        <i class="bi bi-eye"></i>
                         <div>
-                            <h5 class="text-primary">Vision</h5>
-                            <p class=" text-dark">Our mission is to provide high-quality, reliable, and
-                                cost-effective
-                                logistics solutions
-                                to our clients across the globe. Our services include air, sea, and land
-                                transportation,
-                                customs clearance, warehousing, packaging, and distribution
+                            <h5 class="text-primary">Vission</h5>
+                            <p>Our vision is to be the preferred global trading partner, renowned for our unwavering
+                                dedication to integrity, innovation, and inclusivity. We aim to continually expand our
+                                product range, diversify our markets, and elevate our services to meet the evolving
+                                needs of our clients. Through sustainable practices and an extensive network of
+                                partnerships, we envision a world where trade transcends borders, and prosperity knows
+                                no bounds
                             </p>
                         </div>
                     </li>
                 </ul>
-                <p>
-                    Our mission is to provide high-quality, reliable, and cost-effective logistics solutions to our
-                    clients across the globe. Our services include air, sea, and land transportation, customs
-                    clearance,
-                    warehousing, packaging, and distribution
-                </p>
             </div>
         </div>
 
     </div>
-</section><!-- End About Section -->
+</section>
 <section id="services" class="services">
     <div class="container-fluid" data-aos="fade-up">
 
@@ -79,7 +74,7 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-3 col-md-3 col-sm-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                 <div class="icon-box">
                     <div class="icon"><img class="img-fluid center" src="{% static 'img/car.svg' %}" alt=""
                             style="height: 40px; width: 180px;"></div>
@@ -88,7 +83,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+            <div class="col-lg-3 col-md-3 col-sm-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
                 data-aos-delay="200">
                 <div class="icon-box">
                     <div class="icon"> <img class="img-fluid" src="{% static 'img/Shipping.svg' %}" alt=""
@@ -98,7 +93,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
+            <div class="col-lg-3 col-md-3 col-sm-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
                 data-aos-delay="300">
                 <div class="icon-box">
                     <div class="icon"><img class="img-fluid" src="{% static 'img/clearance.svg' %} " alt=""
@@ -108,7 +103,8 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-3 col-md-3 col-sm-6 d-flex align-items-stretch mt-4" data-aos="zoom-in"
+                data-aos-delay="100">
                 <div class="icon-box">
                     <div class="icon"><img class="img-fluid" src="{% static 'img/Accounting.svg' %} " alt=""
                             style="height: 40px; width: 180px;"></div>
@@ -117,7 +113,8 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="col-lg-3 col-md-3 col-sm-6 d-flex align-items-stretch mt-4" data-aos="zoom-in"
+                data-aos-delay="200">
                 <div class="icon-box">
                     <div class="icon"> <img class="img-fluid" src="{% static 'img/import.svg' %} " alt=""
                             style="height: 40px; width: 180px;"></div>
@@ -130,14 +127,14 @@
     </div>
 </section><!-- End Services Section -->
 <section class="products" id="products">
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center bg-light">
         <div class="section-title">
             <h2 class="m-5">Products</h2>
-            <h3>Check our latest <span>Products</span></h3>
+            <h3>Check our latest <span>Automatives</span></h3>
         </div>
         <div class="row mb-0">
             {% for product in products %}
-            <div class="col-md-4 border-1 mb-1 pb-1 bg-light">
+            <div class="col-md-4 border-1 mb-1 pb-1 ">
                 <div class="card mb-4 border-0" style=" height: 30rem;">
                     <div class="card-img-top">
                         <a href="{% url 'product_detail' product.id %}" class="text-primary  text-decoration-none"> <img
@@ -220,5 +217,83 @@
 
     </div>
 </section><!-- End Team Section -->
+<section id="contact" class="contact">
+    <div class="container-fluid" data-aos="fade-up">
 
+        <div class="section-title">
+            <h2>Contact</h2>
+            <h3><span>Contact Us</span></h3>
+            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque
+                vitae autem.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-3 col-md-4">
+                <div class="info-box mb-4">
+                    <i class="bi bi-geo-alt"></i>
+                    <h3>Our Address</h3>
+                    <p>Mohamed Kamil street, Saline Ouest Salaam Tower floor 10, Djibouti</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="info-box  mb-4">
+                    <i class="bi bi-envelope-at"></i>
+                    <h3>Email Us</h3>
+                    <p>Hassen.hared@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="info-box  mb-4">
+                    <i class="bi bi-phone"></i>
+                    <h3>Call Us</h3>
+                    <p>+4917658188153</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="col-lg-4 col-md-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.4441444885897!2d43.140494074266215!3d11.591650643629679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x162301195c21def3%3A0x347cf2fa0e913859!2sSalaam%20Center%2C%20Salaam%20Tower!5e0!3m2!1sen!2sde!4v1694529893170!5m2!1sen!2sde"
+                    width="600" height="450" style="border:0; width: 100%; height: 384px;" allowfullscreen
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="row">
+                        <div class="col form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                required>
+                        </div>
+                        <div class="col form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                            required></textarea>
+                    </div>
+                    <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</section><!-- End Contact Section -->
 {% endblock content %}
