@@ -11,60 +11,58 @@
         </div>
     </div>
 </section><!-- End Hero -->
-<section id="about" class="about section-bg">
-    <div class="container aos-init aos-animate" data-aos="fade-up">
+<section id="about" class="about">
+    <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-            <h2>About</h2>
-            <h3>Find Out More <span>About Us</span></h3>
-            <p>Welcome to Jeeh General Trading - Your Global Trading Partner</p>
+            <h2>About us</h2>
+            <h3>Welcome to Jeeh General Trading <span>Your Global Trading Partner</span></h3>
         </div>
 
-        <div class="row">
-            <div class="col-lg-6 aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
-                <img src="{% static 'img/about1.png' %}" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center aos-init aos-animate"
-                data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-primary">Elevate your business with Jeeh General Trading. Discover the difference a
-                    trusted global trading
-                    partner can make.</h3>
-                <p class="fst-italic">
-                    Choose Jeeh General Trading for your automotive import and export needs. Our expertise and
-                    commitment to excellence in the automotive sector will drive your business forward.
-                </p>
-                <ul>
-                    <li>
-                        <i class="bi bi-bullseye"></i>
-                        <div>
-                            <h5 class="text-primary">Mission</h5>
-                            <p>At Jeeh General Company, we're on a mission to make global trade accessible, reliable,
-                                and enriching for businesses worldwide. We specialize in sourcing and delivering
-                                top-quality automotive and food products from the diverse markets of Dubai, Turkey,
-                                India, Pakistan, China, and Japan. With a steadfast commitment to excellence,
-                                sustainability, and
-                                unmatched service, we empower businesses to thrive in today's interconnected world</p>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="bi bi-eye"></i>
-                        <div>
-                            <h5 class="text-primary">Vission</h5>
-                            <p>Our vision is to be the preferred global trading partner, renowned for our unwavering
-                                dedication to integrity, innovation, and inclusivity. We aim to continually expand our
-                                product range, diversify our markets, and elevate our services to meet the evolving
-                                needs of our clients. Through sustainable practices and an extensive network of
-                                partnerships, we envision a world where trade transcends borders, and prosperity knows
-                                no bounds
-                            </p>
-                        </div>
-                    </li>
-                </ul>
+        <div class="row gy-4 about-row">
+            <div class="about-grid-container">
+                <div class="grid-item">
+                    <h3>Elevate your business with Jeeh General Trading and discover the difference a trusted global
+                        trading partner can make.</h3>
+                    <img src="{% static 'img/about1.png'%}" class="img-fluid rounded-4 mb-4" alt="About image">
+
+                </div>
+                <div class="grid-item">
+                    <div class="content ps-0 ps-lg-5">
+                        <p class="fst-italic">
+                            Choose Jeeh General Trading for your automotive import and export for a strong
+                            presence in key markets such as Dubai, Turkey, India, Pakistan, China, and Japan, we have a
+                            deep understanding of local industries and can source the finest automotive and food
+                            products from around the world.
+                            Our expertise and
+                            commitment to excellence in the automotive sector will drive your business forward.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check-circle-fill"></i> At Jeeh General Company, we're on a mission
+                                to make global trade accessible, reliable, and enriching for businesses worldwide.
+                                We specialize in sourcing and delivering top-quality automotive and food products
+                                from the diverse markets of Dubai, Turkey, India, Pakistan, China, and Japan. With a
+                                steadfast commitment to excellence, sustainability, and unmatched service, we
+                                empower businesses to thrive in today's interconnected world.</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Our vision is to be the preferred global
+                                trading partner, renowned for our unwavering dedication to integrity, innovation,
+                                and inclusivity. We aim to continually expand our product range, diversify our
+                                markets, and elevate our services to meet the evolving needs of our clients. Through
+                                sustainable practices and an extensive network of partnerships, we envision a world
+                                where trade transcends borders, and prosperity knows no bounds</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Choose Jeeh General for your
+                                automotive import and export needs. Our expertise and commitment to excellence in
+                                the automotive sector will drive your business forward.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
     </div>
-</section>
+</section><!-- End About Us Section -->
+
 <section id="services" class="services">
     <div class="container" data-aos="fade-up">
 
@@ -74,52 +72,50 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                <div class="icon-box">
-                    <div class="icon"><img class="img-fluid center" src="{% static 'img/car.svg' %}" alt=""
-                            style="height: 40px; width: 180px;"></div>
-                    <h4><a href="">Automative</a></h4>
-                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            <div class="service-grid-container">
+                <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon"><img class="img-fluid center" src="{% static 'img/car.svg' %}" alt=""
+                                style="height: 40px; width: 180px;"></div>
+                        <h4><a href="">Automotive</a></h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-                data-aos-delay="200">
-                <div class="icon-box">
-                    <div class="icon"> <img class="img-fluid" src="{% static 'img/Shipping.svg' %}" alt=""
-                            style="height: 40px; width: 180px;"> </div>
-                    <h4><a href="">Freight</a></h4>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon"> <img class="img-fluid" src="{% static 'img/Shipping.svg' %}" alt=""
+                                style="height: 40px; width: 180px;"> </div>
+                        <h4><a href="">Freight</a></h4>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
-                data-aos-delay="300">
-                <div class="icon-box">
-                    <div class="icon"><img class="img-fluid" src="{% static 'img/clearance.svg' %} " alt=""
-                            style="height: 40px; width: 180px;"></div>
-                    <h4><a href="">Clearance</a></h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon"><img class="img-fluid" src="{% static 'img/clearance.svg' %} " alt=""
+                                style="height: 40px; width: 180px;"></div>
+                        <h4><a href="">Clearance</a></h4>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch mt-4" data-aos="zoom-in"
-                data-aos-delay="100">
-                <div class="icon-box">
-                    <div class="icon"><img class="img-fluid" src="{% static 'img/Accounting.svg' %} " alt=""
-                            style="height: 50px; width: 180px;"></div>
-                    <h4><a href="">Accounting</a></h4>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon"><img class="img-fluid" src="{% static 'img/Accounting.svg' %} " alt=""
+                                style="height: 50px; width: 180px;"></div>
+                        <h4><a href="">Accounting</a></h4>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch mt-4" data-aos="zoom-in"
-                data-aos-delay="200">
-                <div class="icon-box">
-                    <div class="icon"> <img class="img-fluid" src="{% static 'img/import.svg' %} " alt=""
-                            style="height: 40px; width: 180px;"></div>
-                    <h4><a href="">Import and Export</a></h4>
-                    <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+                <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon"> <img class="img-fluid" src="{% static 'img/import.svg' %} " alt=""
+                                style="height: 40px; width: 180px;"></div>
+                        <h4><a href="">Import and Export</a></h4>
+                        <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,54 +123,57 @@
     </div>
 </section><!-- End Services Section -->
 <section class="products" id="products">
-    <div class="container-fluid text-center bg-light">
-        <div class="section-title">
-            <h2 class="m-5">Products</h2>
-            <h3>Check our latest <span>Automatives</span></h3>
+    <div class="container text-center bg-light">
+        <div class="section-title p-2">
+            <h2>Products</h2>
+            <h3>Check our <span>Automatives</span></h3>
         </div>
         <div class="row mb-0">
-            {% for product in products %}
-            <div class="col-md-4 border-1 mb-1 pb-1 ">
-                <div class="card mb-4 border-0" style=" height: 30rem;">
-                    <div class="card-img-top">
-                        <a href="{% url 'product_detail' product.id %}" class="text-primary  text-decoration-none"> <img
-                                src="{{ product.picture.url }}" alt="Product Image" class="product-image img-fluid"
-                                style="height: 200px; width: 100%;"></a>
-                    </div>
-                    <div class="card-body">
-                        <a href="{% url 'product_detail' product.id %}" class="text-primary  text-decoration-none">
-                            <h4 class="card-title bg-primary text-white">{{ product.name }}</h4>
-                        </a>
-                        <p class="card-text">Fuel Efficiency (Highway): {{ product.fuel_efficiency_highway }} MPG</p>
-                        <div class="product-info">
-                            <span class="text-primary justify-content-end">${{ product.Price }}</span>
+            <div class="product-row">
+                {% for product in products %}
+                <div class="col-md-4 border-0 mb-1 pb-1">
+                    <div class="card mb-4 border-0" style=" height: 30rem; width: 20rem;">
+                        <div class="card-img-top">
+                            <a href="{% url 'product_detail' product.id %}" class="text-primary  text-decoration-none">
+                                <img src="{{ product.picture.url }}" alt="Product Image" class="product-image img-fluid"
+                                    style="height: 200px; width: 100%;"></a>
                         </div>
-                        <p>
-                            {% if request.user.is_authenticated %}
-                        <div class="product-actions">
-                            <a href="{% url 'product_detail' product.id %}"
-                                class="text-primary m-5  text-decoration-none">Check
-                                the
-                                product &rarr;</a>
-                            <p>
-                                <a href="{% url 'product-edit' product.id %}"
-                                    class="text-danger m-5 text-decoration-none">Edit</a>
-                                <a href="{% url 'product-delete' product.id %}"
-                                    class="text-danger m-5  text-decoration-none">Delete</a>
+                        <div class="card-body">
+                            <a href="{% url 'product_detail' product.id %}" class="text-primary  text-decoration-none">
+                                <h4 class="card-title bg-primary text-white">{{ product.name }}</h4>
+                            </a>
+                            <p class="card-text">Fuel Efficiency (Highway): {{ product.fuel_efficiency_highway }} MPG
                             </p>
+                            <p class="card-text">Key Features: {{ product.key_features }}</p>
+                            <div class="product-info">
+                                <span class="text-primary justify-content-end">${{ product.Price }}</span>
+                            </div>
+                            <p>
+                                {% if request.user.is_authenticated %}
+                            <div class="product-actions">
+                                <a href="{% url 'product_detail' product.id %}"
+                                    class="text-primary m-5  text-decoration-none">Check
+                                    the
+                                    product &rarr;</a>
+                                <p>
+                                    <a href="{% url 'product-edit' product.id %}"
+                                        class="text-danger m-5 text-decoration-none">Edit</a>
+                                    <a href="{% url 'product-delete' product.id %}"
+                                        class="text-danger m-5  text-decoration-none">Delete</a>
+                                </p>
+                            </div>
+                            {% else %}
+                            <div class="product-actions">
+                                <a href="{% url 'product_detail' product.id %}"
+                                    class="text-primary  text-decoration-none">Check the
+                                    product &rarr;</a>
+                            </div>
+                            {% endif %}
                         </div>
-                        {% else %}
-                        <div class="product-actions">
-                            <a href="{% url 'product_detail' product.id %}"
-                                class="text-primary  text-decoration-none">Check the
-                                product &rarr;</a>
-                        </div>
-                        {% endif %}
                     </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-            </p>
         </div>
         <div class="mb-1">
             <a href="{% url 'product'%}">
@@ -193,105 +192,106 @@
         </div>
 
         <div class="row">
-            {% for team in teams %}
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                <div class="member">
-                    <div class="member-img">
-                        <img src="{{ team.picture.url }}" class="img-fluid" alt="">
-                        <div class="social">
-                            <a href="{{team.twitter_link}}"><i class="bi bi-twitter"></i></a>
-                            <a href="{{team.facebook_link}}"><i class="bi bi-facebook"></i></a>
-                            <a href="{{team.instagram_link}}"><i class="bi bi-instagram"></i></a>
-                            <a href="{{team.youtube_link}}"><i class="bi bi-youtube"></i></a>
+            <div class="team-grid-container">
+                {% for team in teams %}
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="member" style="height: 23rem;">
+                        <div class="member-img">
+                            <img src=" {{ team.picture.url }}" class="img-fluid" alt="">
+                            <div class="social">
+                                <a href="{{team.twitter_link}}"><i class="bi bi-twitter"></i></a>
+                                <a href="{{team.facebook_link}}"><i class="bi bi-facebook"></i></a>
+                                <a href="{{team.instagram_link}}"><i class="bi bi-instagram"></i></a>
+                                <a href="{{team.youtube_link}}"><i class="bi bi-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4 class="text-primary text-center">{{ team.Firstname }} {{ team.Lastname }}</h4>
+                            <span class="text-center">{{team.Position}}</span>
                         </div>
                     </div>
-                    <div class="member-info">
-                        <h4 class="text-primary">{{ team.Firstname }} {{ team.Lastname }}</h4>
-                        <span>{{team.Position}}</span>
-                    </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-
         </div>
-
     </div>
 </section><!-- End Team Section -->
-<section id="contact" class="contact">
-    <div class="container" data-aos="fade-up">
+<section id="contact" class="contact bg-light">
+    <div class="container-fluid" data-aos="fade-up">
 
         <div class="section-title">
             <h2>Contact</h2>
-            <h3><span>Contact Us</span></h3>
-            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque
-                vitae autem.</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-            <div class="col-lg-3 col-md-4">
-                <div class="info-box mb-4">
-                    <i class="bi bi-geo-alt"></i>
-                    <h3>Our Address</h3>
-                    <p>Mohamed Kamil street, Saline Ouest Salaam Tower floor 10, Djibouti</p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-                <div class="info-box  mb-4">
-                    <i class="bi bi-envelope-at"></i>
-                    <h3>Email Us</h3>
-                    <p>Hassen.hared@gmail.com</p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-                <div class="info-box  mb-4">
-                    <i class="bi bi-phone"></i>
-                    <h3>Call Us</h3>
-                    <p>+4917658188153</p>
-                </div>
-            </div>
+            <h3>We're here to assist you. <span>Feel free to reach out for any inquiries, questions, or partnership
+                    opportunities</span></h3>
 
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-grid-container">
+                <div class="col-lg-3 col-md-4" style=" width: 20rem;">
+                    <div class="info-box mb-4">
+                        <i class="bi bi-geo-alt"></i>
+                        <h3>Our Address</h3>
+                        <p>Mohamed Kamil street, Saline Ouest Salaam Tower floor 10, Djibouti</p>
+                    </div>
+                </div>
 
-            <div class="col-lg-4 col-md-6">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.4441444885897!2d43.140494074266215!3d11.591650643629679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x162301195c21def3%3A0x347cf2fa0e913859!2sSalaam%20Center%2C%20Salaam%20Tower!5e0!3m2!1sen!2sde!4v1694529893170!5m2!1sen!2sde"
-                    width="600" height="450" style="border:0; width: 100%; height: 384px;" allowfullscreen
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-lg-3 col-md-4" style=" width: 20rem;">
+                    <div class="info-box  mb-4">
+                        <i class="bi bi-envelope-at"></i>
+                        <h3>Email Us</h3>
+                        <p>Hassen.hared@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4" style="width: 20rem;">
+                    <div class="info-box  mb-4">
+                        <i class="bi bi-phone"></i>
+                        <h3>Call Us</h3>
+                        <p>+4917658188153</p>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <div class="col-lg-4 col-md-6">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                    <div class="row">
-                        <div class="col form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="contactmap-grid-container">
+                <div class="col-lg-6 col-md-6" style="width: 35rem;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.4441444885897!2d43.140494074266215!3d11.591650643629679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x162301195c21def3%3A0x347cf2fa0e913859!2sSalaam%20Center%2C%20Salaam%20Tower!5e0!3m2!1sen!2sde!4v1694529893170!5m2!1sen!2sde"
+                        width="600" height="450" style="border: 0; width: 100%; height: 384px;" allowfullscreen
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-lg-6 col-md-6" style="width: 35rem;">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="col form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                    required>
+                            </div>
+                            <div class="col form-group">
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
                                 required>
                         </div>
-                        <div class="col form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                                required>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                required></textarea>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                            required>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Message"
-                            required></textarea>
-                    </div>
-                    <div class="my-3">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your message has been sent. Thank you!</div>
-                    </div>
-                    <div class="text-center"><button type="submit">Send Message</button></div>
-                </form>
+                        <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
+                </div>
             </div>
-
         </div>
 
     </div>

@@ -63,93 +63,6 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: #1e81b0;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  transition: all 0.4s;
-}
-
-.back-to-top i {
-  font-size: 28px;
-  color: #fff;
-  line-height: 0;
-}
-
-.back-to-top:hover {
-  background: #3284f1;
-  color: #fff;
-}
-
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
-  [data-aos-delay] {
-    transition-delay: 0 !important;
-  }
-}
-
-/*--------------------------------------------------------------
-# Top Bar
---------------------------------------------------------------*/
-#topbar {
-  background: #1e81b0;
-  height: 40px;
-  font-size: 14px;
-  transition: all 0.5s;
-  color: #fff;
-  padding: 0;
-}
-
-#topbar .contact-info i {
-  font-style: normal;
-  color: #fff;
-}
-
-#topbar .contact-info i a,
-#topbar .contact-info i span {
-  padding-left: 5px;
-  color: #fff;
-}
-
-#topbar .contact-info i a {
-  line-height: 0;
-  transition: 0.3s;
-  transition: 0.3s;
-}
-
-#topbar .contact-info i a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-
-#topbar .social-links a {
-  color: rgba(255, 255, 255, 0.7);
-  line-height: 0;
-  transition: 0.3s;
-  margin-left: 20px;
-}
-
-#topbar .social-links a:hover {
-  color: white;
-}
-
-/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
@@ -186,9 +99,7 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
+/* Desktop Navigation */
 .navbar {
   padding: 0;
 }
