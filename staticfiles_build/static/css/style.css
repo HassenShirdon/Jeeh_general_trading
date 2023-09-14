@@ -4,6 +4,9 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -637,6 +640,102 @@ section {
 
 
 
+/* Custom CSS for the about-us page */
+.about-hero {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.about-hero h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1e81b0;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  font-size: 18px;
+  color: #1e81b0;
+  line-height: 1.6;
+}
+
+.about-history {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.about-history h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-history p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6rem;
+  text-align: center;
+}
+
+.about-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.about-images img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vision-mission {
+  padding: 50px 0;
+}
+
+.vision-mission h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e81b0;
+  margin-bottom: 20px;
+}
+
+.vision-mission .card {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vision-mission .card-body {
+  text-align: center;
+}
+
+.vision-mission .card-icon {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.vision-mission .card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e81b0;
+  margin-bottom: 10px;
+}
+
+.vision-mission .card-text {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.history {
+  font-size: 14px !important;
+  color: #195e83 !important;
+}
+
 
 /*--------------------------------------------------------------
 # Services
@@ -719,6 +818,110 @@ section {
 
 .services .icon-box:hover .icon {
   border-color: #1e81b0;
+}
+
+.services-hero-section {
+  background-image: url('../img/services.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 150px 0;
+}
+
+.services-hero-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.services-hero-description {
+  font-size: 20px;
+}
+
+.how-we-help-section {
+  padding: 50px 0;
+}
+
+.how-we-help-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.how-we-help-text {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* Custom CSS for Last Section - Three Rows with Two Columns Each */
+.services-section {
+  padding: 50px 0;
+}
+
+.service-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font: bold;
+}
+
+.service-description {
+  font-size: 16px;
+  color: #555;
+}
+
+/*** Service ***/
+.service-item img {
+  transition: .5s;
+}
+
+.service-item:hover img {
+  transform: scale(1.1);
+}
+
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+
+  /* Adjust the column layout on smaller screens */
+  .service-section .col-md-3,
+  .service-section .col-md-8 {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* Mobile responsiveness (max-width: 767px) */
+@media screen and (max-width: 767px) {
+  .service-contain {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .brandon {
+    font-size: 20px;
+  }
+
+  .text-dark {
+    font-size: 14px;
+  }
+}
+
+/* Tablet responsiveness (min-width: 768px) and (max-width: 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .brandon {
+    font-size: 22px;
+  }
+
+  .text-dark {
+    font-size: 16px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -953,6 +1156,106 @@ small.justify-content-center {
   opacity: 1;
   bottom: 15px;
 }
+
+
+/* team in about page styling */
+.teamabout {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #007bff;
+
+}
+
+.section-subtitle {
+  font-size: 1.5em;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+
+.team-grid-about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.team-member-about {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  padding: 5px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-member-about:hover {
+  box-shadow: 0 5px 10px rgba(86, 89, 247, 0.2);
+}
+
+.member-img-about {
+  justify-content: center;
+}
+
+.member-img-about img {
+
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.description-team {
+  width: 100%;
+  color: #1e81b0;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.team-member-about:hover .description {
+  opacity: 1;
+}
+
+.member-info-about {
+  padding: 20px;
+}
+
+.member-info-about h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.member-info-about h5 {
+  font-size: 16px;
+  color: #8b8e93;
+  margin-bottom: 20px;
+}
+
+.social-icons-about {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons-about a {
+  color: #007bff;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.social-icons-about a:hover {
+  color: #0056b3;
+  transform: scale(1.1);
+}
+
 
 
 /*--------------------------------------------------------------
