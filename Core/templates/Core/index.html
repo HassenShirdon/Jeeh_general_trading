@@ -24,33 +24,26 @@
                 <div class="grid-item">
                     <h3>Elevate your business with Jeeh General Trading and discover the difference a trusted global
                         trading partner can make.</h3>
-                    <img src="{% static 'img/about1.png'%}" class="img-fluid rounded-4 mb-4" alt="About image">
+                    <img src="{% static 'img/Logo_jeeh.png'%}" class="img-fluid rounded-4 mb-4" alt="About image"
+                        style="height: 15rem;" data-aos="zoom-in" data-aos-delay="100">
 
                 </div>
                 <div class="grid-item">
                     <div class="content ps-0 ps-lg-5">
                         <p class="fst-italic">
                             Choose Jeeh General Trading for your automotive import and export for a strong
-                            presence in key markets such as Dubai, Turkey, India, Pakistan, China, and Japan, we have a
-                            deep understanding of local industries and can source the finest automotive and food
-                            products from around the world.
-                            Our expertise and
-                            commitment to excellence in the automotive sector will drive your business forward.
+                            presence in key markets such as Dubai, Turkey, India, Pakistan, China, and Japan.
                         </p>
-                        <ul>
-                            <li><i class="bi bi-check-circle-fill"></i> At Jeeh General Company, we're on a mission
+                        <ul data-aos="fade-up">
+                            <li data-aos="fade-up"><i class="bi bi-check-circle-fill"></i> At Jeeh General Company,
+                                we're on a mission
                                 to make global trade accessible, reliable, and enriching for businesses worldwide.
-                                We specialize in sourcing and delivering top-quality automotive and food products
-                                from the diverse markets of Dubai, Turkey, India, Pakistan, China, and Japan. With a
-                                steadfast commitment to excellence, sustainability, and unmatched service, we
-                                empower businesses to thrive in today's interconnected world.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Our vision is to be the preferred global
+                                We specialize in sourcing and delivering top-quality automotive and food products</li>
+                            <li data-aos="fade-up"><i class="bi bi-check-circle-fill"></i> Our vision is to be the
+                                preferred global
                                 trading partner, renowned for our unwavering dedication to integrity, innovation,
-                                and inclusivity. We aim to continually expand our product range, diversify our
-                                markets, and elevate our services to meet the evolving needs of our clients. Through
-                                sustainable practices and an extensive network of partnerships, we envision a world
-                                where trade transcends borders, and prosperity knows no bounds</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Choose Jeeh General for your
+                                and inclusivity.</li>
+                            <li data-aos="fade-up"><i class="bi bi-check-circle-fill"></i> Choose Jeeh General for your
                                 automotive import and export needs. Our expertise and commitment to excellence in
                                 the automotive sector will drive your business forward.
                             </li>
@@ -77,7 +70,7 @@
                     <div class="icon-box">
                         <div class="icon"><img class="img-fluid center" src="{% static 'img/car.svg' %}" alt=""
                                 style="height: 40px; width: 180px;"></div>
-                        <h4><a href="">Automotive</a></h4>
+                        <h4><a href="{% url 'services' %}">Automotive</a></h4>
                         <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
                     </div>
                 </div>
@@ -86,7 +79,7 @@
                     <div class="icon-box">
                         <div class="icon"> <img class="img-fluid" src="{% static 'img/Shipping.svg' %}" alt=""
                                 style="height: 40px; width: 180px;"> </div>
-                        <h4><a href="">Freight</a></h4>
+                        <h4><a href="{% url 'services' %}">Freight</a></h4>
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
                     </div>
                 </div>
@@ -95,7 +88,7 @@
                     <div class="icon-box">
                         <div class="icon"><img class="img-fluid" src="{% static 'img/clearance.svg' %} " alt=""
                                 style="height: 40px; width: 180px;"></div>
-                        <h4><a href="">Clearance</a></h4>
+                        <h4><a href="{% url 'services' %}">Clearance</a></h4>
                         <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
                     </div>
                 </div>
@@ -104,7 +97,7 @@
                     <div class="icon-box">
                         <div class="icon"><img class="img-fluid" src="{% static 'img/Accounting.svg' %} " alt=""
                                 style="height: 50px; width: 180px;"></div>
-                        <h4><a href="">Accounting</a></h4>
+                        <h4><a href="{% url 'services' %}">Accounting</a></h4>
                         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
                     </div>
                 </div>
@@ -113,7 +106,7 @@
                     <div class="icon-box">
                         <div class="icon"> <img class="img-fluid" src="{% static 'img/import.svg' %} " alt=""
                                 style="height: 40px; width: 180px;"></div>
-                        <h4><a href="">Import and Export</a></h4>
+                        <h4><a href="{% url 'services' %}">Import and Export</a></h4>
                         <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
                     </div>
                 </div>

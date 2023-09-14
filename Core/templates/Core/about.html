@@ -30,7 +30,7 @@
       </div>
       <div class="col-md-4">
         <div class="about-image">
-          <img src="{% static 'images/Logo_jeeh.png'%}" alt="Image 1" style="height: 100%; width: 100%;">
+          <img src="{% static 'img/Logo_jeeh.png'%}" alt="Image 1" style="height: 100%; width: 100%;">
 
         </div>
       </div>
@@ -85,24 +85,24 @@
     </div>
   </div>
 </section>
-<section class="team" id="team">
+<section class="teamabout" id="team">
   <h2 class="section-title mb-0">Our Team</h2>
   <div class="container">
     <p class="section-subtitle text-center">Meet our professional and dedicated team that combines both readiness and
       efficiency</p>
-    <div class="team-grid">
+    <div class="team-grid-about">
       {% for team in teams %}
-      <div class="team-member mb-0">
-        <div class="member-img align-content-center">
+      <div class="team-member-about mb-4">
+        <div class="member-img-about align-content-center">
           <img class="img-thumbnail " src="{{ team.picture.url }}" alt="{{ team.Firstname }} {{ team.Lastname }}" />
-          <div class="description">
+          <div class="description-team">
             <p class="text-black text-center">{{ team.description }}</p>
           </div>
         </div>
-        <div class="member-info">
+        <div class="member-info-about">
           <h4>{{ team.Firstname }} {{ team.Lastname }}</h4>
           <h5 class="text-primary">{{ team.Position }}</h5>
-          <div class="social-icons">
+          <div class="social-icons-about">
             <a href="{{team.facebook_link}}"><i class="bi bi-facebook"></i></a>
             <a href="{{team.twitter_link}}"><i class="bi bi-twitter"></i></i></a>
             <a href="{{team.instagram_link}}"><i class="bi bi-instagram"></i></a>
