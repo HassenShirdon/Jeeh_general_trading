@@ -67,7 +67,7 @@ class Team(models.Model):
     Lastname = models.CharField(max_length=50)
     Position = models.CharField(max_length=50)
     description = models.TextField(max_length=500)
-    picture = models.ImageField(upload_to='teams', default=0)
+    picture = models.ImageField(upload_to='products', default=0)
     facebook_link = models.URLField(default="")
     twitter_link = models.URLField(default="")
     instagram_link = models.URLField(default="")
