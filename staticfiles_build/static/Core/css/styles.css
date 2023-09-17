@@ -380,6 +380,28 @@ section {
     color: #195e83 !important;
 }
 
+/* Mobile-first design */
+@media (max-width: 768px) {
+    .about .about-grid-container {
+        grid-template-columns: 1fr;
+        /* Single column for mobile */
+    }
+
+    .about .call-us {
+        left: 5%;
+        right: 5%;
+        /* Adjust the margins for smaller screens */
+    }
+}
+
+/* Tablet and larger screens */
+@media (min-width: 769px) {
+    .about .about-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* Back to two columns for tablets */
+    }
+}
+
 
 /*--------------------------------------------------------------
   # Services
@@ -541,6 +563,12 @@ section {
     .service-contain {
         flex-direction: column;
         align-items: center;
+    }
+
+    .service-grid-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .service-col {
@@ -905,7 +933,25 @@ small.justify-content-center {
     transform: scale(1.1);
 }
 
+@media screen and (max-width: 992px) {
+    .team .team-grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
+@media screen and (max-width: 768px) {
+    .team .team-grid-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .team .team-grid-container {
+        grid-template-columns: 1fr;
+    }
+}
 
 /*--------------------------------------------------------------
   # Contact
@@ -1041,5 +1087,21 @@ small.justify-content-center {
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contact .contact-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact .contact-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact .contactmap-grid-container {
+        grid-template-columns: 1fr;
     }
 }
