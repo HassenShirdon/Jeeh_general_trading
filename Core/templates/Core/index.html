@@ -16,7 +16,7 @@
 
         <div class="section-title ">
             <h2>About us</h2>
-            <h3>Welcome to Jeeh General Trading <span>Your Global Trading Partner</span></h3>
+            <h3>Welcome to Jeeh General Trading: <span>Your Global Trading Partner</span></h3>
         </div>
 
         <div class="row gy-4 about-row">
@@ -61,7 +61,7 @@
 
         <div class="section-title">
             <h2>Services</h2>
-            <h3>Check our <span>Services</span></h3>
+            <h3>Check our services:<span> Tailored Solutions for Your Needs</span></h3>
         </div>
 
         <div class="row">
@@ -71,7 +71,7 @@
                         <div class="icon"><img class="img-fluid center" src="{% static 'img/car.svg' %}" alt=""
                                 style="height: 40px; width: 180px;"></div>
                         <h4><a href="{% url 'services' %}">Automotive</a></h4>
-                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        <p>Streamlined Vehicle Logistics for a Hassle-Free Journey</p>
                     </div>
                 </div>
 
@@ -80,7 +80,7 @@
                         <div class="icon"> <img class="img-fluid" src="{% static 'img/shipping.svg' %}" alt=""
                                 style="height: 40px; width: 180px;"> </div>
                         <h4><a href="{% url 'services' %}">Freight</a></h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                        <p>Efficient Cargo Management Tailored to Your Needs</p>
                     </div>
                 </div>
 
@@ -89,7 +89,7 @@
                         <div class="icon"><img class="img-fluid" src="{% static 'img/clearance.svg' %} " alt=""
                                 style="height: 40px; width: 180px;"></div>
                         <h4><a href="{% url 'services' %}">Clearance</a></h4>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                        <p>Navigating Regulatory Waters with Expertise</p>
                     </div>
                 </div>
 
@@ -98,7 +98,7 @@
                         <div class="icon"><img class="img-fluid" src="{% static 'img/accounting.svg' %} " alt=""
                                 style="height: 50px; width: 180px;"></div>
                         <h4><a href="{% url 'services' %}">Accounting</a></h4>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                        <p>Financial Precision in the Dynamic Transport Industry</p>
                     </div>
                 </div>
 
@@ -107,7 +107,7 @@
                         <div class="icon"> <img class="img-fluid" src="{% static 'img/import.svg' %} " alt=""
                                 style="height: 40px; width: 180px;"></div>
                         <h4><a href="{% url 'services' %}">Import and Export</a></h4>
-                        <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+                        <p>Simplified Global Trade for Enhanced Efficiency</p>
                     </div>
                 </div>
             </div>
@@ -119,13 +119,13 @@
     <div class="container-fluid text-center bg-light">
         <div class="section-title p-2">
             <h2>Products</h2>
-            <h3>Check our <span>Automatives</span></h3>
+            <h3>Check our products<span>: Quality Solutions for Every Need</span></h3>
         </div>
         <div class="row mb-0 bg-light">
             <div class="product-row">
                 {% for product in products %}
                 <div class="col-md-4 border-0 mb-1 pb-1">
-                    <div class="card mb-4 border-0" style=" height: 30rem; width: 20rem;">
+                    <div class="card mb-4 border-0" style=" height: 32rem; width: 20rem;">
                         <div class="card-img-top">
                             <a href="{% url 'product_detail' product.id %}" class="text-primary  text-decoration-none">
                                 <img src="{{ product.picture.url }}" alt="Product Image" class="product-image img-fluid"
@@ -176,116 +176,112 @@
     </div>
 </section>
 <section id="team" class="team section-bg">
-    <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-            <h2 class="mt-0">Team</h2>
-            <h3>Innovators, Creators, and Dreamers: <span>Our Team</span></h3>
-        </div>
-
-        <div class="row">
-            <div class="team-grid-container">
-                {% for team in teams %}
-                <div data-aos="fade-up" data-aos-delay="100">
-                    <div class="member" style="height: 23rem;">
-                        <div class="member-img">
-                            <img src=" {{ team.picture.url }}" class="img-fluid" alt="">
-                            <div class="social">
-                                <a href="{{team.twitter_link}}"><i class="bi bi-twitter"></i></a>
-                                <a href="{{team.facebook_link}}"><i class="bi bi-facebook"></i></a>
-                                <a href="{{team.instagram_link}}"><i class="bi bi-instagram"></i></a>
-                                <a href="{{team.youtube_link}}"><i class="bi bi-youtube"></i></a>
-                            </div>
-                        </div>
-                        <div class="member-info">
-                            <h4 class="text-primary text-center">{{ team.Firstname }} {{ team.Lastname }}</h4>
-                            <span class="text-center">{{team.Position}}</span>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</section><!-- End Team Section -->
-<section id="contact" class="contact bg-light">
     <div class="container-fluid" data-aos="fade-up">
 
         <div class="section-title">
-            <h2>Contact</h2>
-            <h3>We're here to assist you. <span>Feel free to reach out for any inquiries, questions, or partnership
-                    opportunities</span></h3>
+            <h2 class="mt-0">Team</h2>
+            <h3>Meet Our Team: <span>The Driving Force Behind Our Success</span></h3>
+        </div>
 
+        <div class="row">
+            {% for team in teams %}
+            <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                    <div class="member-img" style="height: 350px">
+                        <img src="{{ team.picture.url }}" class="img-fluid"
+                            alt="{{ team.Firstname }} {{ team.Lastname }}">
+                        <div class="social">
+                            <a href="{{ team.twitter_link }}"><i class="bi bi-twitter"></i></a>
+                            <a href="{{ team.facebook_link }}"><i class="bi bi-facebook"></i></a>
+                            <a href="{{ team.instagram_link }}"><i class="bi bi-instagram"></i></a>
+                            <a href="{{ team.youtube_link }}"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info text-center">
+                        <h4 class="text-primary">{{ team.Firstname }} {{ team.Lastname }}</h4>
+                        <span>{{ team.Position }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section><!-- End Team Section -->
+
+<section id="contact" class="contact bg-light">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Contact</h2>
+            <h3>Get in Touch:<span> Reach Out to Us Today </span></h3>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
-            <div class="contact-grid-container">
-                <div class="col-lg-3 col-md-4" style=" width: 20rem;">
-                    <div class="info-box mb-4">
-                        <i class="bi bi-geo-alt"></i>
-                        <h3>Our Address</h3>
-                        <p>Mohamed Kamil street, Saline Ouest Salaam Tower floor 10, Djibouti</p>
-                    </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="info-box">
+                    <i class="bi bi-geo-alt"></i>
+                    <h3>Our Address</h3>
+                    <p>Mohamed Kamil street, Saline Ouest Salaam Tower floor 10, Djibouti</p>
                 </div>
+            </div>
 
-                <div class="col-lg-3 col-md-4" style=" width: 20rem;">
-                    <div class="info-box  mb-4">
-                        <i class="bi bi-envelope-at"></i>
-                        <h3>Email Us</h3>
-                        <p>Hassen.hared@gmail.com</p>
-                    </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="info-box">
+                    <i class="bi bi-envelope-at"></i>
+                    <h3>Email Us</h3>
+                    <p>Hassen.hared@gmail.com</p>
                 </div>
+            </div>
 
-                <div class="col-lg-3 col-md-4" style="width: 20rem;">
-                    <div class="info-box  mb-4">
-                        <i class="bi bi-phone"></i>
-                        <h3>Call Us</h3>
-                        <p>+4917658188153</p>
-                    </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="info-box">
+                    <i class="bi bi-phone"></i>
+                    <h3>Call Us</h3>
+                    <p>+4917658188153</p>
                 </div>
             </div>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
-            <div class="contactmap-grid-container">
-                <div class="col-lg-6 col-md-6" style="width: 35rem;">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.4441444885897!2d43.140494074266215!3d11.591650643629679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x162301195c21def3%3A0x347cf2fa0e913859!2sSalaam%20Center%2C%20Salaam%20Tower!5e0!3m2!1sen!2sde!4v1694529893170!5m2!1sen!2sde"
-                        width="600" height="450" style="border: 0; width: 100%; height: 384px;" allowfullscreen
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            <div class="col-lg-6 col-md-6 mb-4">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.4441444885897!2d43.140494074266215!3d11.591650643629679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x162301195c21def3%3A0x347cf2fa0e913859!2sSalaam%20Center%2C%20Salaam%20Tower!5e0!3m2!1sen!2sde!4v1694529893170!5m2!1sen!2sde"
+                    width="100%" height="450" style="border: 0;" allowfullscreen loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
-                <div class="col-lg-6 col-md-6" style="width: 35rem;">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                            <div class="col form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                    required>
-                            </div>
-                            <div class="col form-group">
-                                <input type="email" class="form-control" name="email" id="email"
-                                    placeholder="Your Email" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+            <div class="col-lg-6 col-md-6 mb-4">
+                <h3 class="section-title">We are waiting your message!</h3>
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
                                 required>
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" placeholder="Message"
-                                required></textarea>
+                        <div class="col-md-6 form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                required>
                         </div>
-                        <div class="my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                        </div>
-                        <div class="text-center"><button type="submit">Send Message</button></div>
-                    </form>
-                </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                            required></textarea>
+                    </div>
+                    <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
             </div>
         </div>
 
     </div>
 </section><!-- End Contact Section -->
+
 {% endblock content %}
