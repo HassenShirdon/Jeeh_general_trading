@@ -287,14 +287,14 @@ section {
 /* Custom CSS for the about-us page */
 .about-hero {
     text-align: center;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .about-hero h2 {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
     color: #1e81b0;
-    margin-bottom: 20px;
+    margin-top: 15px;
 }
 
 .about-hero p {
@@ -304,15 +304,15 @@ section {
 }
 
 .about-history {
-    padding: 50px 0;
-    background-color: #f9f9f9;
+    padding: 20px 0;
+    background-color: #ffffff;
 }
 
 .about-history h3 {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .about-history p {
@@ -341,7 +341,7 @@ section {
 }
 
 .vision-mission h3 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     color: #1e81b0;
     margin-bottom: 20px;
@@ -362,22 +362,26 @@ section {
 }
 
 .vision-mission .card-title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #1e81b0;
     margin-bottom: 10px;
 }
 
 .vision-mission .card-text {
-    font-size: 18px;
+    font-size: 14px;
     color: #555;
-    line-height: 1.6;
+    line-height: 24px;
     text-align: justify;
 }
 
 .history {
-    font-size: 14px !important;
+    font-size: 16px !important;
     color: #195e83 !important;
+}
+
+.about-card:hover {
+    scale: 1.05;
 }
 
 /* Mobile-first design */
@@ -492,48 +496,48 @@ section {
     background-position: center;
     color: #fff;
     text-align: center;
-    padding: 150px 0;
+    padding: 100px 0;
 }
 
 .services-hero-title {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .services-hero-description {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .how-we-help-section {
-    padding: 50px 0;
+    padding: 40px 0;
 }
 
 .how-we-help-title {
-    font-size: 32px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .how-we-help-text {
-    font-size: 18px;
+    font-size: 16px;
     color: #ffffff;
 }
 
 /* Custom CSS for Last Section - Three Rows with Two Columns Each */
 .services-section {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .service-title {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
     font: bold;
 }
 
 .service-description {
-    font-size: 16px;
+    font-size: 14px;
     color: #555;
 }
 
@@ -750,7 +754,7 @@ small.justify-content-center {
   # Team
   --------------------------------------------------------------*/
 .team {
-    padding: 60px 0;
+    padding: 30px 0;
 }
 
 .team .team-grid-container {
@@ -842,14 +846,14 @@ small.justify-content-center {
 }
 
 .section-title {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
     color: #007bff;
 
 }
 
 .section-subtitle {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #000000;
     margin-bottom: 10px;
 }

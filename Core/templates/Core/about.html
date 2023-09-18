@@ -9,27 +9,31 @@
 </section>
 
 <section class="about-history">
-  <div class="container">
+  <div class="container ">
     <div class="row">
-      <div class="col-md-8">
-        <h3 class="text-primary text-center">Our Historical Background</h3>
-        <p class="history m-5">Jeeh General Trading is a full-service logistics and transportation
-          import and export
-          company based in Djibouti, UAE, and Turkey. Our mission is to provide high-quality, reliable, and
+      <div class="col-md-7">
+        <h3 class=" text-primary text-center">Our Historical Background</h3>
+        <p class="history pt-2"">Jeeh General Trading is a full-service logistics and transportation
+          import and export company based in Djibouti, UAE, and Turkey. Our mission is to provide high-quality,
+          reliable, and
           cost-effective logistics solutions to our clients across the globe. Our services include air, sea, and land
           transportation, customs clearance, warehousing, packaging, and distribution.
+        </p>
+        <p class=" history pt-2"">p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, natus autem expedita tenetur quia perspiciatis
           officiis vitae iure accusamus rem voluptatem itaque cupiditate obcaecati! At, dolorem nostrum eum, iure ad,
           minus commodi architecto consequuntur pariatur consequatur deserunt odio quidem ea iste omnis aut fuga.
-          Deleniti cupiditate vitae illo necessitatibus dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="history pt-2"> Deleniti cupiditate vitae illo necessitatibus dolor? Lorem ipsum dolor sit amet
+          consectetur adipisicing elit.
           Tempore ratione eius consectetur possimus! Laudantium deleniti voluptas mollitia quae rem facere nemo ad
           laboriosam labore ex voluptate qui possimus dolorem, vitae esse et corporis necessitatibus quo error
           voluptates facilis aliquid. Quidem illum modi veniam veritatis, velit adipisci culpa facilis excepturi
           obcaecati.
         </p>
       </div>
-      <div class="col-md-4">
-        <div class="about-image">
+      <div class="col-md-5">
+        <div class="about-image mx-5 ">
           <img src="{% static 'img/Logo_jeeh.png'%}" alt="Image 1" style="height: 100%; width: 100%;">
 
         </div>
@@ -39,10 +43,10 @@
 </section>
 
 <section class="vision-mission">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row m-2">
       <div class="col-md-4">
-        <div class="card">
+        <div class="card about-card">
           <div class="card-body">
             <h3 class="text-primary"><i class="bi bi-eye-fill"></i></h3>
             <h4 class="card-title text-primary">Vision</h4>
@@ -56,7 +60,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card">
+        <div class="card about-card">
           <div class="card-body">
             <h3 class="text-primary"> <i class="bi bi-compass-fill"></i></h3>
             <h4 class="card-title text-primary">Mission</h4>
@@ -70,7 +74,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card">
+        <div class="card about-card">
           <div class="card-body">
             <h3 class="text-primary"><i class="bi bi-bullseye"></i></h3>
             <h4 class="card-title text-primary">Goals</h4>
@@ -85,10 +89,11 @@
     </div>
   </div>
 </section>
-<section class="teamabout" id="team">
+<section class="teamabout" id="team-about">
   <h2 class="section-title mb-0">Our Team</h2>
   <div class="container">
-    <p class="section-subtitle text-center">Meet our professional and dedicated team that combines both readiness and
+    <p class="section-subtitle text-center p-2">Meet our professional and dedicated team that combines both readiness
+      and
       efficiency</p>
     <div class="team-grid-about">
       {% for team in teams %}
