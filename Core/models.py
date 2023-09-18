@@ -85,7 +85,7 @@ class Testominals(models.Model):
     Firstname = models.CharField(max_length=50)
     Lastname = models.CharField(max_length=50)
     Testominalstext = models.TextField(max_length=500)
-    picture = models.ImageField(upload_to='testimonials', default=0)
+    picture = models.ImageField(upload_to='products', default=0)
     position = models.CharField(max_length=50)
 
     def __str__(self):
