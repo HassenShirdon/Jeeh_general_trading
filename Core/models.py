@@ -38,7 +38,7 @@ class Product(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=100)
     slug = models.SlugField(max_length=200, unique=True)
-    picture = models.ImageField(upload_to='products',
+    picture = models.ImageField(upload_to='jeehWebsite/static/images',
                                 height_field=None, width_field=None, max_length=100, default=0)
     description = models.TextField(max_length=500)
     model = models.CharField(max_length=5, choices=car_categories,
