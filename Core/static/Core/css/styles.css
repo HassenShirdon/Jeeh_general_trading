@@ -38,7 +38,7 @@
 
 #hero h2 {
     color: #ffffff;
-    margin: 5px 0 30px 0;
+    margin: 5px 0 25px 0;
     font-size: 24px;
     font-weight: 400;
 }
@@ -230,11 +230,17 @@ section {
 }
 
 .about h3 {
-    font-weight: 700;
+    font-weight: 400;
     font-size: 28px;
     margin-bottom: 20px;
     font-family: "Poppins", sans-serif;
     color: #1e81b0;
+}
+
+.about .grid-item {
+
+    justify-content: center;
+    align-items: center;
 }
 
 .about .call-us {
