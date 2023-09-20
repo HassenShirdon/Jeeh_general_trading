@@ -6,8 +6,8 @@
 <section class="product-hero mt-5 mb-2">
     <div class="container">
         <h2>Our Products</h2>
-        <p>Unveiling Excellence on Wheels: Discover Our Exquisite Collection of Cars."
-            "Elevate Your Driving Experience with our Premium Selection of Cars</p>
+        <p>Unveiling Excellence on Wheels: Discover Our Exquisite Collection of Cars. Elevate Your Driving Experience
+            with our Premium Selection of Cars</p>
     </div>
 </section>
 <section class="productspage " id="productspage">
@@ -15,7 +15,7 @@
         <div class="row product-row d-flex justify-content-center align-items-center">
             {% for product in products %}
             <div class="col-md-3 mb-2">
-                <div class="card">
+                <div class="card" style="height: 460px;">
                     <img src="{{ product.picture.url }}" class="card-img-top" alt="{{ product.name }}">
                     <div class="card-body pt-0 px-2">
                         <div class="d-flex flex-row justify-content-between mb-2">
@@ -71,7 +71,7 @@
                             {% else %}
                             <div class="product-actions align-items-center">
                                 <a href="{% url 'product_detail' product.id %}"
-                                    class="btn btn-primary text-white btn-block"><small>Check the
+                                    class="btn-primary text-white btn-block"><small>Check the
                                         product</small></a>
                             </div>
                             {% endif %}

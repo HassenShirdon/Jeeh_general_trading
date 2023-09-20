@@ -66,55 +66,73 @@
 
         <div class="row">
             <div class="service-grid-container">
+
+                <!-- Automotive Service -->
                 <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
                     <div class="icon-box">
-                        <div class="icon"><img class="img-fluid center" src="{% static 'img/car.svg' %}" alt=""
-                                style="height: 40px; width: 180px;"></div>
+                        <div class="icon">
+                            <img class="img-fluid center" src="{% static 'img/car.svg' %}" alt=""
+                                style="height: 40px; width: 180px;">
+                        </div>
                         <h4><a href="{% url 'services' %}">Automotive</a></h4>
                         <p>Streamlined Vehicle Logistics for a Hassle-Free Journey</p>
                     </div>
                 </div>
 
+                <!-- Freight Service -->
                 <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
                     <div class="icon-box">
-                        <div class="icon"> <img class="img-fluid" src="{% static 'img/shipping.svg' %}" alt=""
-                                style="height: 40px; width: 180px;"> </div>
+                        <div class="icon">
+                            <img class="img-fluid" src="{% static 'img/shipping.svg' %}" alt=""
+                                style="height: 40px; width: 180px;">
+                        </div>
                         <h4><a href="{% url 'services' %}">Freight</a></h4>
                         <p>Efficient Cargo Management Tailored to Your Needs</p>
                     </div>
                 </div>
 
+                <!-- Clearance Service -->
                 <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
                     <div class="icon-box">
-                        <div class="icon"><img class="img-fluid" src="{% static 'img/clearance.svg' %} " alt=""
-                                style="height: 40px; width: 180px;"></div>
+                        <div class="icon">
+                            <img class="img-fluid" src="{% static 'img/clearance.svg' %}" alt=""
+                                style="height: 40px; width: 180px;">
+                        </div>
                         <h4><a href="{% url 'services' %}">Clearance</a></h4>
                         <p>Navigating Regulatory Waters with Expertise</p>
                     </div>
                 </div>
 
+                <!-- Accounting Service -->
                 <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
                     <div class="icon-box">
-                        <div class="icon"><img class="img-fluid" src="{% static 'img/accounting.svg' %} " alt=""
-                                style="height: 50px; width: 180px;"></div>
+                        <div class="icon">
+                            <img class="img-fluid" src="{% static 'img/accounting.svg' %}" alt=""
+                                style="height: 50px; width: 180px;">
+                        </div>
                         <h4><a href="{% url 'services' %}">Accounting</a></h4>
                         <p>Financial Precision in the Dynamic Transport Industry</p>
                     </div>
                 </div>
 
+                <!-- Import and Export Service -->
                 <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
                     <div class="icon-box">
-                        <div class="icon"> <img class="img-fluid" src="{% static 'img/import.svg' %} " alt=""
-                                style="height: 40px; width: 180px;"></div>
+                        <div class="icon">
+                            <img class="img-fluid" src="{% static 'img/import.svg' %}" alt=""
+                                style="height: 40px; width: 180px;">
+                        </div>
                         <h4><a href="{% url 'services' %}">Import and Export</a></h4>
                         <p>Simplified Global Trade for Enhanced Efficiency</p>
                     </div>
                 </div>
+
             </div>
         </div>
 
     </div>
 </section><!-- End Services Section -->
+
 <section class="products" id="products">
     <div class="container-fluid text-center bg-light">
         <div class="section-title p-2">
@@ -125,7 +143,7 @@
             <div class="product-row">
                 {% for product in products %}
                 <div class="col-md-4 border-0 mb-1 pb-1">
-                    <div class="card mb-4 border-0" style=" height: 32rem; width: 20rem;">
+                    <div class="card mb-4 border-0" style=" height: 32rem; width: 19rem;">
                         <div class="card-img-top">
                             <a href="{% url 'product_detail' product.id %}" class="text-primary  text-decoration-none">
                                 <img src="{{ product.picture.url }}" alt="Product Image" class="product-image img-fluid"
