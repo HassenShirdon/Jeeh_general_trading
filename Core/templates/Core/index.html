@@ -22,34 +22,28 @@
         <div class="row gy-4 about-row">
             <div class="about-grid-container">
                 <div class="grid-item ">
-                    <div class="row d-flex justify-content-center align-content-center text-center">
+                    <h4 class="text-primary text-center">Elevate your business with Jeeh General Trading and discover
+                        the difference a trusted global trading partner can make.</h4>
+                    <img src="{% static 'img/Logo_jeeh.png'%}" class="img-fluid rounded-4 mr-2 py-4" alt="About image"
+                        style="height: 22rem; width: 22rem;" data-aos="zoom-in" data-aos-delay="100">
 
-                        <h4 class="text-primary text-center p-0">Elevate your business with Jeeh General Trading and
-                            discover
-                            the difference a trusted global trading partner can make.</h4>
-                        <img src="{% static 'img/Logo_jeeh.png'%}" class="img-fluid rounded-4 mr-2 py-4"
-                            alt="About image" style="height: 22rem; width: 22rem;" data-aos="zoom-in"
-                            data-aos-delay="100">
-
-                    </div>
                 </div>
                 <div class="grid-item">
                     <div class="content ps-0 ps-lg-5">
-                        <p class="fst-italic text-black p-2">
+                        <p class="fst-italic text-black">
                             Choose Jeeh General Trading for your automotive import and export for a strong
                             presence in key markets such as Dubai, Turkey, India, Pakistan, China, and Japan.
                         </p>
-                        <ul data-aos="fade-up p-2">
+                        <ul data-aos="fade-up">
                             <li data-aos="fade-up"><i class="bi bi-check-circle-fill"></i> At Jeeh General Company,
                                 we're on a mission
                                 to make global trade accessible, reliable, and enriching for businesses worldwide.
                                 We specialize in sourcing and delivering top-quality automotive and food products</li>
-                            <li data-aos="fade-up p-2"><i class="bi bi-check-circle-fill"></i> Our vision is to be the
+                            <li data-aos="fade-up"><i class="bi bi-check-circle-fill"></i> Our vision is to be the
                                 preferred global
                                 trading partner, renowned for our unwavering dedication to integrity, innovation,
                                 and inclusivity.</li>
-                            <li data-aos="fade-up p-2"><i class="bi bi-check-circle-fill"></i> Choose Jeeh General for
-                                your
+                            <li data-aos="fade-up"><i class="bi bi-check-circle-fill"></i> Choose Jeeh General for your
                                 automotive import and export needs. Our expertise and commitment to excellence in
                                 the automotive sector will drive your business forward.
                             </li>
@@ -63,7 +57,7 @@
 </section><!-- End About Us Section -->
 
 <section id="services" class="services">
-    <div class="container-fluid" data-aos="fade-up">
+    <div class="container" data-aos="fade-up">
 
         <div class="section-title">
             <h2>Services</h2>
@@ -90,7 +84,7 @@
                     <div class="icon-box">
                         <div class="icon">
                             <img class="img-fluid" src="{% static 'img/shipping.svg' %}" alt=""
-                                style="height: 38px; width: 150px;">
+                                style="height: 40px; width: 180px;">
                         </div>
                         <h4><a href="{% url 'services' %}">Freight</a></h4>
                         <p>Efficient Cargo Management Tailored to Your Needs</p>
@@ -102,7 +96,7 @@
                     <div class="icon-box">
                         <div class="icon">
                             <img class="img-fluid" src="{% static 'img/clearance.svg' %}" alt=""
-                                style="height: 38px; width: 150px;">
+                                style="height: 40px; width: 180px;">
                         </div>
                         <h4><a href="{% url 'services' %}">Clearance</a></h4>
                         <p>Navigating Regulatory Waters with Expertise</p>
@@ -114,7 +108,7 @@
                     <div class="icon-box">
                         <div class="icon">
                             <img class="img-fluid" src="{% static 'img/accounting.svg' %}" alt=""
-                                style="height: 38px; width: 150px;">
+                                style="height: 50px; width: 180px;">
                         </div>
                         <h4><a href="{% url 'services' %}">Accounting</a></h4>
                         <p>Financial Precision in the Dynamic Transport Industry</p>
@@ -211,9 +205,9 @@
             {% for team in teams %}
             <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="member">
-                    <div class="member-img" style="height: 200px">
+                    <div class="member-img" style="height: 350px">
                         <img src="{{ team.picture.url }}" class="img-fluid"
-                            alt="{{ team.Firstname }} {{ team.Lastname }}" style="height: 250px; width: 350px;">
+                            alt="{{ team.Firstname }} {{ team.Lastname }}">
                         <div class="social">
                             <a href="{{ team.twitter_link }}"><i class="bi bi-twitter"></i></a>
                             <a href="{{ team.facebook_link }}"><i class="bi bi-facebook"></i></a>
